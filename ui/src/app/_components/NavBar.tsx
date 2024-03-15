@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 function Navbar() {
   return (
@@ -12,9 +13,7 @@ function Navbar() {
       </Link>
       <div className='flex items-center gap-8'>
         <div>
-          <button className='border rounded-md border-gray-400 px-3 py-2'>
-            Connect Wallet
-          </button>
+          <ConnectButton />
         </div>
       </div>
     </nav>
