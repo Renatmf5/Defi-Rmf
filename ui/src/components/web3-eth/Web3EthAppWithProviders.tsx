@@ -2,7 +2,7 @@
 
 import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 
-import { config } from '@/services/web3/wagmiConfig';
+import { wagmiConfig } from '@/services/web3/wagmiConfig';
 
 import {
   QueryClientProvider,
@@ -13,14 +13,10 @@ import { WagmiProvider } from 'wagmi';
 const queryClient = new QueryClient();
 
 
-
-
-
-
 export const Web3EthAppWithProviders = ({ children }: { children: React.ReactNode }) => {
 
   return (
-    <WagmiProvider config={config}>
+    <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider>
           {children}

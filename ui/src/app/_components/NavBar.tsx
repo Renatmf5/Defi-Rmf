@@ -13,7 +13,7 @@ function Navbar() {
       </Link>
       <div className='flex items-center gap-8'>
         <div>
-          <ConnectButton />
+          <ConnectButton showBalance={true} chainStatus="name" accountStatus="address" />
         </div>
       </div>
     </nav>
