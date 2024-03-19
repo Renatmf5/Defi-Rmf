@@ -7,4 +7,5 @@ forge script script/deploy.local.s.sol:Local \
     --verbosity \
     --legacy
 
+python3 deploy.py
 

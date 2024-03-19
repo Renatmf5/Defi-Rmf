@@ -1,6 +1,6 @@
 import '@rainbow-me/rainbowkit/styles.css';
 
-import { Web3EthAppWithProviders } from '@/components/web3-eth/Web3EthAppWithProviders';
+import { Web3EthAppWithProviders } from '@/components/Web3EthAppWithProviders';
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
@@ -8,6 +8,7 @@ import localFont from 'next/font/local';
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from "./_components/theme-provider";
 import NavBar from "./_components/NavBar";
+
 
 
 const fontSans = FontSans({
